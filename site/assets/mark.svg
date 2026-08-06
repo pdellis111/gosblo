@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="mark-title">
+  <title id="mark-title">GOSBLO</title>
+  <g fill="none" stroke="#090909" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M13 27 39 8l29 9 23 29-11 35-32 12-31-17L7 47Z"/>
+    <path d="m13 27 35 15 20-25M13 27l4 49 31-34 32 39M7 47l41-5 43 4M17 76l31-34v51M39 8l9 34 32 39M39 8l29 9-20 25 43 4M68 17l12 64-32 12M7 47 39 8m52 38L48 93M17 76l63 5"/>
+  </g>
+  <g fill="#090909">
+    <circle cx="39" cy="8" r="4"/><circle cx="68" cy="17" r="4"/><circle cx="13" cy="27" r="4"/>
+    <circle cx="7" cy="47" r="4"/><circle cx="48" cy="42" r="4"/><circle cx="91" cy="46" r="4"/>
+    <circle cx="17" cy="76" r="4"/><circle cx="80" cy="81" r="4"/><circle cx="48" cy="93" r="4"/>
+  </g>
+</svg>

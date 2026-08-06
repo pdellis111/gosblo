@@ -1,10 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 96" role="img" aria-labelledby="logo-title logo-desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 132" role="img" aria-labelledby="logo-title logo-desc">
   <title id="logo-title">GOSBLO</title>
-  <desc id="logo-desc">GOSBLO Assurance logo</desc>
-  <g fill="none" stroke="#fff" stroke-width="7">
-    <path d="M48 13a35 35 0 1 0 31 52"/>
-    <path d="M49 48h31v30"/>
+  <desc id="logo-desc">Engineering and Software Development</desc>
+  <text x="8" y="75" fill="#090909" font-family="Arial, Helvetica, sans-serif" font-size="70" font-weight="700" letter-spacing="-2">GOSBLO</text>
+  <g transform="translate(382 12)" fill="none" stroke="#090909" stroke-linecap="round" stroke-linejoin="round">
+    <g stroke-width="2.3">
+      <path d="M13 28 39 9l29 9 22 28-11 34-31 13-31-17L8 47Z"/>
+      <path d="m13 28 35 14 20-24M13 28l4 48 31-34 31 38M8 47l40-5 42 4M17 76l31-34v51M39 9l9 33 31 38M39 9l29 9-20 24 42 4M68 18l11 62-31 13"/>
+      <path d="M8 47 39 9m51 37L48 93M17 76l62 4"/>
+    </g>
+    <g fill="#090909" stroke="none">
+      <circle cx="39" cy="9" r="4"/><circle cx="68" cy="18" r="4"/><circle cx="13" cy="28" r="4"/>
+      <circle cx="8" cy="47" r="4"/><circle cx="48" cy="42" r="4"/><circle cx="90" cy="46" r="4"/>
+      <circle cx="17" cy="76" r="4"/><circle cx="79" cy="80" r="4"/><circle cx="48" cy="93" r="4"/>
+    </g>
   </g>
-  <text x="102" y="61" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="51" font-weight="700" letter-spacing="3">GOSBLO</text>
-  <text x="105" y="84" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="14" letter-spacing="7">ASSURANCE</text>
+  <text x="10" y="116" fill="#202020" font-family="Arial, Helvetica, sans-serif" font-size="22">Engineering and Software Development</text>
 </svg>
