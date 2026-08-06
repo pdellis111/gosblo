@@ -143,7 +143,10 @@ Resources:
                 Resource: !Sub 'arn:${AWS::Partition}:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/${AWS::StackName}-contact:*'
               - Effect: Allow
                 Action: ses:SendEmail
-                Resource: !Sub 'arn:${AWS::Partition}:ses:${AWS::Region}:${AWS::AccountId}:identity/${ContactFromEmail}'
+                Resource: '*'
+                Condition:
+                  StringEquals:
+                    ses:FromAddress: !Ref ContactFromEmail
 
   ContactFunction:
     Type: AWS::Lambda::Function
