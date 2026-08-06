@@ -40,6 +40,12 @@ class StaticSiteTests(unittest.TestCase):
         self.assertEqual(len(self.parser.forms), 1)
         self.assertTrue(all("alt" in image for image in self.parser.images))
 
+    def test_local_image_assets_exist(self):
+        for image in self.parser.images:
+            source = image.get("src", "")
+            if source.startswith("/"):
+                self.assertTrue((SITE / source.lstrip("/")).is_file(), source)
+
     def test_internal_root_links_resolve_to_files(self):
         for link in self.parser.links:
             if not link.startswith("/") or link == "/":

@@ -262,7 +262,7 @@ Resources:
             Compress: true
             AllowedMethods: [DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT]
             CachedMethods: [GET, HEAD, OPTIONS]
-            CachePolicyId: 413f160e-4f8c-4661-9c58-a385d0c02ea1
+            CachePolicyId: 4135ea2d-6df8-44a3-9df3-4b5a84be39ad
             OriginRequestPolicyId: b689b0a8-53d0-40ab-baf2-68738e2966ac
             ResponseHeadersPolicyId: !Ref SecurityHeaders
         CustomErrorResponses:

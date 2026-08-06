@@ -34,9 +34,18 @@ show a clear error when used only through the local static server.
 
 Prerequisites:
 
-1. Install and authenticate AWS CLI v2 to account `913498135252`.
+1. Install AWS CLI v2 and authenticate with the `gosblo-deploy` IAM Identity
+   Center profile. The profile uses temporary credentials and a dedicated
+   CloudFormation execution role; no long-lived access keys are required.
 2. Verify the contact sender identity in Amazon SES in `ap-southeast-2`.
 3. If the SES account is still in the sandbox, also verify the recipient address.
+
+Authenticate before deploying:
+
+```bash
+aws sso login --profile gosblo-deploy
+export AWS_PROFILE=gosblo-deploy
+```
 
 Deploy first to the generated CloudFront address, without changing DNS:
 

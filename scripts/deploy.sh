@@ -4,6 +4,7 @@ set -euo pipefail
 EXPECTED_ACCOUNT="913498135252"
 AWS_REGION="${AWS_REGION:-ap-southeast-2}"
 STACK_NAME="${STACK_NAME:-gosblo-production}"
+CFN_EXECUTION_ROLE_ARN="${CFN_EXECUTION_ROLE_ARN:-arn:aws:iam::913498135252:role/gosblo/GosbloCloudFormationExecutionRole}"
 
 if [[ "${AWS_REGION}" != "ap-southeast-2" ]]; then
   echo "Refusing to deploy outside ap-southeast-2 (Sydney)." >&2
@@ -66,6 +67,7 @@ aws cloudformation deploy \
   --region "${AWS_REGION}" \
   --stack-name "${STACK_NAME}" \
   --template-file "${ROOT_DIR}/infra/site.yaml" \
+  --role-arn "${CFN_EXECUTION_ROLE_ARN}" \
   --capabilities CAPABILITY_IAM \
   --no-fail-on-empty-changeset \
   --parameter-overrides "${PARAMETERS[@]}"

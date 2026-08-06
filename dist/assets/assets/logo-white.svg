@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 150" role="img" aria-labelledby="logo-title">
   <title id="logo-title">GOSBLO</title>
-  <text x="10" y="112" fill="#000" font-family="Arial, Helvetica, sans-serif" font-size="100" font-weight="700" letter-spacing="-4">GOSBL</text>
-  <g transform="translate(358 38) scale(.34)" fill="none" stroke="#000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+  <text x="10" y="112" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="100" font-weight="700" letter-spacing="-4">GOSBL</text>
+  <g transform="translate(358 38) scale(.34)" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
     <path d="M58 10 181 28M58 10 8 94M58 10 92 78M58 10 214 132M58 10 40 190M181 28 92 78M181 28 214 132M181 28 170 212M8 94 92 78M8 94 40 190M8 94 170 212M92 78 125 132M92 78 214 132M92 78 40 190M92 78 170 212M125 132 214 132M125 132 40 190M125 132 170 212M214 132 170 212M40 190 170 212"/>
-    <g fill="#000" stroke="none">
+    <g fill="#fff" stroke="none">
       <circle cx="58" cy="10" r="10"/><circle cx="181" cy="28" r="10"/>
       <circle cx="8" cy="94" r="10"/><circle cx="92" cy="78" r="10"/>
       <circle cx="125" cy="132" r="10"/><circle cx="214" cy="132" r="10"/>
