@@ -117,6 +117,30 @@
         "arn:aws:ses:ap-southeast-2:913498135252:identity/gosblo.com",
         "arn:aws:ses:ap-southeast-2:913498135252:identity/pdellis111@gmail.com"
       ]
+    },
+    {
+      "Sid": "ReadGosbloDnsZone",
+      "Effect": "Allow",
+      "Action": [
+        "route53:GetHostedZone",
+        "route53:ListResourceRecordSets"
+      ],
+      "Resource": "arn:aws:route53:::hostedzone/Z02673634UJQ6B2F26RI"
+    },
+    {
+      "Sid": "ReadGosbloDnsChanges",
+      "Effect": "Allow",
+      "Action": "route53:GetChange",
+      "Resource": "arn:aws:route53:::change/*"
+    },
+    {
+      "Sid": "ReadGosbloCertificate",
+      "Effect": "Allow",
+      "Action": [
+        "acm:DescribeCertificate",
+        "acm:ListTagsForCertificate"
+      ],
+      "Resource": "arn:aws:acm:us-east-1:913498135252:certificate/6a59930e-33fc-4df4-b9d6-76f1bbbbc9c4"
     }
   ]
 }

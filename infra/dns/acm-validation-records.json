@@ -1,0 +1,27 @@
+{
+  "Comment": "ACM DNS validation for gosblo.com and www.gosblo.com",
+  "Changes": [
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "_09f33b5bf155c3856d31a48428ef5f09.gosblo.com.",
+        "Type": "CNAME",
+        "TTL": 300,
+        "ResourceRecords": [
+          { "Value": "_797e69a2c49f34a297ed28ed2280add1.jkddzztszm.acm-validations.aws." }
+        ]
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "_ed2a3810a6fc16038a831c5fa5ded828.www.gosblo.com.",
+        "Type": "CNAME",
+        "TTL": 300,
+        "ResourceRecords": [
+          { "Value": "_4d4f12655a4cbd01ab94d6f338f34235.jkddzztszm.acm-validations.aws." }
+        ]
+      }
+    }
+  ]
+}

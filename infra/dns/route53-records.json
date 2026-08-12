@@ -1,0 +1,248 @@
+{
+  "Comment": "Copy Bluehost DNS records before changing authoritative nameservers",
+  "Changes": [
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "gosblo.com.",
+        "Type": "A",
+        "TTL": 300,
+        "ResourceRecords": [{ "Value": "162.241.24.128" }]
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "gosblo.com.",
+        "Type": "MX",
+        "TTL": 300,
+        "ResourceRecords": [{ "Value": "0 mail.gosblo.com." }]
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "gosblo.com.",
+        "Type": "TXT",
+        "TTL": 300,
+        "ResourceRecords": [{ "Value": "\"v=spf1 a mx include:websitewelcome.com ~all\"" }]
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "www.gosblo.com.",
+        "Type": "A",
+        "TTL": 300,
+        "ResourceRecords": [{ "Value": "162.241.24.128" }]
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "mail.gosblo.com.",
+        "Type": "A",
+        "TTL": 300,
+        "ResourceRecords": [{ "Value": "162.241.24.128" }]
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "webmail.gosblo.com.",
+        "Type": "A",
+        "TTL": 300,
+        "ResourceRecords": [{ "Value": "162.241.24.128" }]
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "ftp.gosblo.com.",
+        "Type": "A",
+        "TTL": 300,
+        "ResourceRecords": [{ "Value": "162.241.24.128" }]
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "cpanel.gosblo.com.",
+        "Type": "A",
+        "TTL": 300,
+        "ResourceRecords": [{ "Value": "162.241.24.128" }]
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "autodiscover.gosblo.com.",
+        "Type": "A",
+        "TTL": 300,
+        "ResourceRecords": [{ "Value": "162.241.24.128" }]
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "autoconfig.gosblo.com.",
+        "Type": "A",
+        "TTL": 300,
+        "ResourceRecords": [{ "Value": "162.241.24.128" }]
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "cpcontacts.gosblo.com.",
+        "Type": "A",
+        "TTL": 300,
+        "ResourceRecords": [{ "Value": "162.241.24.128" }]
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "cpcalendars.gosblo.com.",
+        "Type": "A",
+        "TTL": 300,
+        "ResourceRecords": [{ "Value": "162.241.24.128" }]
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "whm.gosblo.com.",
+        "Type": "A",
+        "TTL": 300,
+        "ResourceRecords": [{ "Value": "162.241.24.128" }]
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "webdisk.gosblo.com.",
+        "Type": "A",
+        "TTL": 300,
+        "ResourceRecords": [{ "Value": "162.241.24.128" }]
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "default._domainkey.gosblo.com.",
+        "Type": "TXT",
+        "TTL": 300,
+        "ResourceRecords": [{ "Value": "\"v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4eE86tpdG3RUrkIty/6EBRHsPT4rvnY13Ru0I04ye6jdXrUDHPc/1YjvgxYe0Mk0G52aTjT/I+ex+lZrYj2+U1moAWFT244voGbvHpkgayH3ab14hYCIW/t9V+5xcgqJuUSIa9Ypsu3V51p9RcsnhJkFzKSY506fHNX1oMeiWg+stXQLzwQ/KLHRN1SKtUEV1\" \"bHvEUgHikD2onnpE3koElT0Hxd4dXM1ie/NgFih9no36TlP1Q2Ef2S/2YSDY/9XoRLO98JHLskSryoTT5g+w3naReq8lEgGzGxDaQMhWQcqxplOStXPMbMNjVhhmqCI9b81m8vClmmgTZBIsiUhnQIDAQAB;\"" }]
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "_caldav._tcp.gosblo.com.",
+        "Type": "SRV",
+        "TTL": 300,
+        "ResourceRecords": [{ "Value": "0 0 2079 box5872.bluehost.com." }]
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "_caldav._tcp.gosblo.com.",
+        "Type": "TXT",
+        "TTL": 300,
+        "ResourceRecords": [{ "Value": "\"path=/\"" }]
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "_caldavs._tcp.gosblo.com.",
+        "Type": "SRV",
+        "TTL": 300,
+        "ResourceRecords": [{ "Value": "0 0 2080 box5872.bluehost.com." }]
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "_caldavs._tcp.gosblo.com.",
+        "Type": "TXT",
+        "TTL": 300,
+        "ResourceRecords": [{ "Value": "\"path=/\"" }]
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "_carddav._tcp.gosblo.com.",
+        "Type": "SRV",
+        "TTL": 300,
+        "ResourceRecords": [{ "Value": "0 0 2079 box5872.bluehost.com." }]
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "_carddav._tcp.gosblo.com.",
+        "Type": "TXT",
+        "TTL": 300,
+        "ResourceRecords": [{ "Value": "\"path=/\"" }]
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "_carddavs._tcp.gosblo.com.",
+        "Type": "SRV",
+        "TTL": 300,
+        "ResourceRecords": [{ "Value": "0 0 2080 box5872.bluehost.com." }]
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "_carddavs._tcp.gosblo.com.",
+        "Type": "TXT",
+        "TTL": 300,
+        "ResourceRecords": [{ "Value": "\"path=/\"" }]
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "_autodiscover._tcp.gosblo.com.",
+        "Type": "SRV",
+        "TTL": 300,
+        "ResourceRecords": [{ "Value": "0 0 443 cpanelemaildiscovery.cpanel.net." }]
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "tf2fylfbwoaickgf6wgi3ghbxrufnerd._domainkey.gosblo.com.",
+        "Type": "CNAME",
+        "TTL": 300,
+        "ResourceRecords": [{ "Value": "tf2fylfbwoaickgf6wgi3ghbxrufnerd.dkim.amazonses.com." }]
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "bnddluou6ceb5x5qnwo6gmbukms76hzc._domainkey.gosblo.com.",
+        "Type": "CNAME",
+        "TTL": 300,
+        "ResourceRecords": [{ "Value": "bnddluou6ceb5x5qnwo6gmbukms76hzc.dkim.amazonses.com." }]
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "tqhnwksohow3ms3zyeqh2vhmgwit3njq._domainkey.gosblo.com.",
+        "Type": "CNAME",
+        "TTL": 300,
+        "ResourceRecords": [{ "Value": "tqhnwksohow3ms3zyeqh2vhmgwit3njq.dkim.amazonses.com." }]
+      }
+    }
+  ]
+}
