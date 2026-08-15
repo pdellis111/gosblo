@@ -56,6 +56,10 @@ p { margin: 0 0 1rem; }
 .hero-copy p { max-width: 520px; margin: 0; color: rgba(255,255,255,.78); font-size: 1.15rem; }
 .button { display: inline-flex; justify-content: center; align-items: center; min-height: 50px; border: 0; border-radius: 999px; padding: .78rem 1.3rem; color: var(--white); background: var(--orange); font-weight: 800; text-decoration: none; cursor: pointer; }
 .hero .button { justify-self: start; margin-top: 1.5rem; }
+.profile-link { display: inline-flex; align-items: center; gap: 2px; width: auto; margin: .2rem 0 1.1rem; color: #0a66c2; font-size: 1.1rem; font-weight: 800; line-height: 1; text-decoration: none; }
+.profile-link:hover, .profile-link:focus { color: #004182; }
+.profile-link-badge { display: inline-flex; align-items: center; justify-content: center; min-width: 1.1em; height: 1.1em; border-radius: 2px; padding: 0 .12em; color: var(--white); background: #0a66c2; font-size: .95em; line-height: 1; }
+.profile-link:hover .profile-link-badge, .profile-link:focus .profile-link-badge { background: #004182; }
 
 .intro-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(3rem, 8vw, 9rem); align-items: start; }
 .stat { border-top: 1px solid var(--line); padding: 1.4rem 0; }
