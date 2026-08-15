@@ -27,8 +27,20 @@ make test
 make serve
 ```
 
-Open <http://localhost:8080>. The contact form requires the AWS backend and will
+Open <http://localhost:8081>. The contact form requires the AWS backend and will
 show a clear error when used only through the local static server.
+
+For automatic browser refresh while editing, run:
+
+```bash
+make live
+```
+
+Use a different port if `8081` is busy:
+
+```bash
+make live PORT=8082
+```
 
 ## Deploy to AWS account 913498135252
 
